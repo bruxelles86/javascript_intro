@@ -1,10 +1,5 @@
-// function Fizzbuzz() {
-//   this.array = [0..100]
-// };
-
 function Fizzbuzz() {
 };
-//  var Fizzbuzz = function(){};
 
 Fizzbuzz.prototype.isDivisibleByThree = function(number) {
   if (number % 3 == 0)
@@ -43,12 +38,3 @@ Fizzbuzz.prototype.runNumbers = function() {
     }
    }
    };
-//
-//   else if (fizzbuzz.isDivisibleByFive(number)) {
-//     console.log("Buzz")
-//   };
-//
-//   else if (fizzbuzz.isDivisibleByThree(number)) {
-//     console.log("Fizz")
-//   };
-//)

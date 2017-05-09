@@ -1,0 +1,3 @@
+function Airport() {
+  this.landingStrip = []
+};
