@@ -10,5 +10,12 @@ describe('Airport', function(){
     });
   });
 
+  describe('airport can land a plane', function() {
+    it ('is expected to land a plane with the array', function(){
+      airport.land('plane');
+      expect(airport.landingStrip).toEqual(['plane'])
+    });
+  });
+
 
 });
