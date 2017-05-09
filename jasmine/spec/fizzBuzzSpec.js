@@ -37,6 +37,13 @@ describe('Fizzbuzz', function() {
     });
   });
 
+  describe('iterates through numbers and outputs appropriate string', function() {
+    it('array contains fizz', function() {
+      fizzbuzz.runNumbers();
+      expect(arrayFizz[0]).toEqual("FizzBuzz");
+    });
+  });
+
 //   describe ('prints Fizz when numbers are divisible by 3', function() {
 //     expect(fizzbuzz.Run).
 //   });
