@@ -53,3 +53,15 @@ describe('Up', function() {
       expect( function() {thermostat.down(); } ).toThrow("Minimum temperature is 10 degrees");
     });
   });
+
+  describe('Reset', function() {
+    beforeEach(function() {
+      thermostat = new Thermostat();
+    });
+
+    it('resets temperature to 20', function() {
+      thermostat.up();
+      thermostat.reset();
+      expect(thermostat.temperature).toBe(20)
+    });
+  });
