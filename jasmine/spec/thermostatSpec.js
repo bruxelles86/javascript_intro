@@ -23,8 +23,16 @@ describe('Up', function() {
     for(var i=1; i <= 5; i++){
       thermostat.up();
     };
-     thermostat.powerSaving = true
+     thermostat.powerSaving = true;
     expect( function() {thermostat.up(); } ).toThrow("Maximum temperature in power saving mode is 25 degrees");
+  });
+
+  it('will not increase temperature past 32 if power saving is off', function() {
+    thermostat.powerSaving = false;
+    for(var i=1; i <=12; i++){
+      thermostat.up();
+    };
+      expect( function() {thermostat.up(); } ).toThrow("Maximum temperature is 32 when power saving off");
   });
 });
 
