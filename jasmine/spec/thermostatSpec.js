@@ -7,6 +7,17 @@ describe('Thermostat', function() {
   it('Starts at 20 degrees', function() {
     expect(thermostat.temperature).toBe(20);
   });
+
+  it('Shows medium usage when temperature is 20', function(){
+    expect(thermostat.currentUsage()).toEqual("medium-usage")
+  });
+
+  it('Shows low usage when temperature is 13', function() {
+    for(var i=1; i <=7; i++){
+      thermostat.down();
+    }
+    expect(thermostat.currentUsage()).toEqual("low-usage")
+  });
 });
 
 describe('Up', function() {
