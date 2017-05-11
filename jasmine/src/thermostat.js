@@ -1,7 +1,7 @@
 function Thermostat(powersaving = true) {
   this.temperature = 20;
   this.minimumTemp = 10;
-  this.powerSaving = powersaving;
+  this.powerSaving = powersaving
   this.currentUsage = function() {
     if(this.temperature < 18) {
       return "low-usage"
