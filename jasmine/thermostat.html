@@ -7,11 +7,15 @@
   <script src="controller.js"></script>
   <script src="src/thermostat.js"></script>
   <script src="weather-interface.js"></script>
+  <link rel = "stylesheet"
+   type = "text/css"
+   href = "myStyle.css" />
 
-<h1>Our kickass thermostat</h1>
 </head>
 
 <body>
+  <h1>Our kickass thermostat</h1>
+  <div id="thermostat">
   <section>
   <h1>Current temperature: <span id="current-temperature">20</span></h1>
   <form id="select-city">
@@ -26,18 +30,19 @@
   <p>Power saving mode</p><p id="power_saving"></p>
   <p>Current power usage</p><p id="power_usage"></p>
 
-  <form id="increase_temp">
+  <form id="increase_temp" class="buttons">
     <input type="button" value="Increase temperature" />
   </form>
-  <form id="reduce_temp">
+  <form id="reduce_temp" class="buttons">
     <input  type="button" value="Reduce temperature" />
   </form>
-  <form id="reset_temp">
+  <form id="reset_temp" class="buttons">
     <input type="button" value="Reset temperature" />
   </form>
-  <form id="toggle_saving">
+  <form id="toggle_saving" class="buttons">
     <input type="button" value="Toggle power-saving mode" />
   </form>
+</div>
 
 </body>
 
