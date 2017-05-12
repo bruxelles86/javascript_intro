@@ -6,11 +6,22 @@
   <script src="jquery-3.2.1.js"></script>
   <script src="controller.js"></script>
   <script src="src/thermostat.js"></script>
+  <script src="weather-interface.js"></script>
 
 <h1>Our kickass thermostat</h1>
 </head>
 
 <body>
+  <section>
+  <h1>Current temperature: <span id="current-temperature">20</span></h1>
+  <form id="select-city">
+    <input id="current-city" type="text" placeholder="Enter a city"></input>
+    <input type="submit"></input>
+  </form>
+  </section>
+
+  <h1 id="test"></h1>
+
   <p>Current temperature:</p><p id="temperature"></p>
   <p>Power saving mode</p><p id="power_saving"></p>
   <p>Current power usage</p><p id="power_usage"></p>
